@@ -1388,7 +1388,7 @@ p {
 .footer {
   position: relative;
   z-index: 1;
-  background: #1A3154;
+  background:  #171717;
   padding-top: 120px;
 }
 
@@ -1433,15 +1433,15 @@ p {
 
 .footer .widget-area .footer-widget h4 {
   margin-bottom: 40px;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .footer .widget-area .footer-widget p {
-  color: #fff;
+  color:rgb(255, 255, 255);
 }
 
 .footer .widget-area .footer-widget .footer-links ul li a {
-  color: #fff;
+  color:rgb(255, 255, 255);
   line-height: 35px;
   transition: .3s ease-in-out;
   display: block;

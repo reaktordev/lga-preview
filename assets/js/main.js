@@ -16,13 +16,15 @@
     Sticky
     ======================================= */
     window.onscroll = function () {
+  
         var header_navbar = document.querySelector(".navbar-area");
         var sticky = header_navbar.offsetTop;
         var logo = document.querySelector(".navbar-brand img");
-
+       
         if (window.pageYOffset > sticky) {
             header_navbar.classList.add("sticky");
             logo.src = 'assets/img/logo/logo-2.svg'
+          
         } else {
             header_navbar.classList.remove("sticky");
             logo.src = 'assets/img/logo/logo.svg'
@@ -35,6 +37,7 @@
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             backToTo.style.display = "flex";
         } else {
+         
             backToTo.style.display = "none";
         }
     };
@@ -84,9 +87,12 @@
             navbarCollapse.classList.remove('show')
         })
     );
-    navbarToggler.addEventListener('click', function() {
-        navbarToggler.classList.toggle("active");
-    }) 
+    if(navbarToggler){
+        navbarToggler.addEventListener('click', function() {
+            navbarToggler.classList.toggle("active");
+        }) 
+    }
+   
 
 
 
@@ -94,14 +100,6 @@
     new WOW().init();
 
     
-    //====== counter up 
-    var cu = new counterUp({
-        start: 0,
-        duration: 2000,
-        intvalues: true,
-        interval: 100,
-    });
-    cu.start();
-
+   
 
 })();
